@@ -9,6 +9,7 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/styles.css" />
     <title>Weather App</title>
   </head>
@@ -17,10 +18,10 @@
       <div class="weather-app-wrapper">
         <div class="weather-app">
           <div class="weather-overview">
-            <h1>New York</h1>
+            <h1 id="city"></h1>
             <ul>
               <li>Friday 05:00</li>
-              <li>Clear</li>
+              <li id="description"></li>
             </ul>
           </div>
           <div class="row">
@@ -31,15 +32,14 @@
                   alt="clear"
                   id="icon"
                 />
-                <strong id="temperature">12</strong>
+                <strong id="temperature"></strong>
                 <span class="units">°C | °F</span>
               </div>
             </div>
             <div class="col">
               <ul>
-                <li>Precipitation: 0%</li>
-                <li>Humidity: 73%</li>
-                <li>Wind: 2km/h</li>
+                <li>Humidity: <span id="humidity"></span></li>
+                <li>Wind: <span id="wind-speed"></span></li>
               </ul>
             </div>
           </div>
