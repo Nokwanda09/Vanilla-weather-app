@@ -14,28 +14,37 @@
   </head>
   <body>
     <div class="container">
-      <div class="weather-app">
-        <h1>New York</h1>
-        <ul>
-          <li>Friday 05:00</li>
-          <li>Clear</li>
-        </ul>
-        <div class="row">
-          <div class="col">
-            <img
-              src="https://images.freeimages.com/fic/images/icons/2770/ios_7_icons/512/sun.png"
-              width="50px"
-            />
-            12°C | °F
-          </div>
-          <div class="col">
+      <div class="weather-app-wrapper">
+        <div class="weather-app">
+          <div class="weather-overview">
+            <h1>New York</h1>
             <ul>
-              <li>Precipitation: 0%</li>
-              <li>Humidity: 73%</li>
-              <li>Wind: 2km/h</li>
+              <li>Friday 05:00</li>
+              <li>Clear</li>
             </ul>
           </div>
+          <div class="row">
+            <div class="col">
+              <div class="d-flex weather-temperature">
+                <img
+                  src="https://images.freeimages.com/fic/images/icons/2770/ios_7_icons/512/sun.png"
+                  alt="clear"
+                  id="icon"
+                />
+                <strong id="temperature">12</strong>
+                <span class="units">°C | °F</span>
+              </div>
+            </div>
+            <div class="col">
+              <ul>
+                <li>Precipitation: 0%</li>
+                <li>Humidity: 73%</li>
+                <li>Wind: 2km/h</li>
+              </ul>
+            </div>
+          </div>
         </div>
+
         <small
           ><a
             href="https://github.com/Nokwanda09/Vanilla-weather-app"
