@@ -1,5 +1,5 @@
 let apiKey = "8123783b747891cdafd883d799046f7c";
-let city = "Cape Town";
+let city = "Durban";
 let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
 function formatDate(timestamp) {
@@ -26,7 +26,6 @@ function formatDate(timestamp) {
 }
 
 function displayTemperature(response) {
-  console.log(response);
   let temperatureElement = document.querySelector("#temperature");
   let cityElement = document.querySelector("#city");
   let despcription = document.querySelector("#description");
